@@ -1,0 +1,58 @@
+
+    .footer{
+        width: 100%;
+        background-color: $myblue;
+        @include center();
+        .footer_con{
+            width: 80%;
+            .box-con{
+                width: 100%;
+                @include between_s();
+                h2{
+                    font-size: 30px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                .input_1{
+                    border: none;
+                    color: $mywhite;
+                    background-color:rgba($color: $mywhite, $alpha: .7);
+        
+                }
+                .input_2{
+                    border: none;
+                    color: $myblue;
+                    background-color : $mywhite;
+                }
+                .box{
+                    width: 28%;
+                    color: $mywhite;
+                    // background-color: palevioletred;
+                    .ul_icon{
+                        width: 60%;
+                        @include between();
+                        li{
+                            list-style: none;
+                            a{
+                                text-decoration: none;
+                                color: $mywhite;
+                                &:hover{
+                                    color: $mypink;
+                                }
+                            }
+                        }
+                    }
+                    .con_ul{
+                        @include around();
+                        li{
+                            list-style: none;
+                        }
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
